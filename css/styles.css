@@ -260,7 +260,9 @@ h1, h2, h3, h4, h5, h6, p {
 
     transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.section-hero .page-order-btn:hover, .section-hero .page-order-btn:focus {
+.section-hero .page-order-btn:hover, .section-hero .page-order-btn:focus,
+.footer-subscribe-btn:hover, .footer-subscribe-btn:focus,
+.modal-submit-btn:hover, .modal-submit-btn:focus {
     font-family: inherit;
     background: var(--ocean);
     font-weight: 500;
