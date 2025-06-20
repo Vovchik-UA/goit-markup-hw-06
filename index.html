@@ -37,14 +37,19 @@
           <ul class="address-list">
             <li>
               <a class="link" href="mailto:info@devstudio.com"
-                >info@devstudio.com</a
-              >
+                >info@devstudio.com
+              </a>
             </li>
             <li>
               <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
             </li>
           </ul>
         </address>
+        <button class="burger-menu-btn" type="button">
+          <svg class="burger-menu-icon" width="24" height="24">
+            <use href="./images/icons.svg#icon-burger-menu"></use>
+          </svg>
+        </button>
       </div>
     </header>
 
@@ -129,7 +134,11 @@
           <ul class="section-list">
             <li class="list-box">
               <img
-                src="./images/team-img-1.jpg"
+                srcset="
+                  ./images/team-img-1-@1x.jpg 1x,
+                  /images/team-img-1-@2x.jpg  2x
+                "
+                src="./images/team-img-1-@1x.jpg"
                 alt="Mark Guerrero"
                 width="264"
                 height="260"
@@ -175,7 +184,11 @@
             </li>
             <li class="list-box">
               <img
-                src="./images/team-img-2.jpg"
+                srcset="
+                  ./images/team-img-2-@1x.jpg 1x,
+                  /images/team-img-2-@2x.jpg  2x
+                "
+                src="./images/team-img-2-@1x.jpg"
                 alt="Tom Ford"
                 width="264"
                 height="260"
@@ -219,7 +232,11 @@
             </li>
             <li class="list-box">
               <img
-                src="./images/team-img-3.jpg"
+                srcset="
+                  ./images/team-img-3-@1x.jpg 1x,
+                  /images/team-img-3-@2x.jpg  2x
+                "
+                src="./images/team-img-3-@1x.jpg"
                 alt="Camila Garcia"
                 width="264"
                 height="260"
@@ -263,7 +280,11 @@
             </li>
             <li class="list-box">
               <img
-                src="./images/team-img-4.jpg"
+                srcset="
+                  ./images/team-img-4-@1x.jpg 1x,
+                  /images/team-img-4-@2x.jpg  2x
+                "
+                src="./images/team-img-4-@1x.jpg"
                 alt="Daniel Wilson"
                 width="264"
                 height="260"
@@ -316,7 +337,7 @@
             <li class="list-box">
               <div class="image-cover">
                 <img
-                  src="./images/portfolio-img-1.jpg"
+                  src="./images/portfolio-img-1-pc-@1x.jpg"
                   alt="Banking App"
                   width="360"
                   height="300"
@@ -336,7 +357,7 @@
             <li class="list-box">
               <div class="image-cover">
                 <img
-                  src="./images/portfolio-img-2.jpg"
+                  src="./images/portfolio-img-2-pc-@1x.jpg"
                   alt="Cashless Payment"
                   width="360"
                   height="300"
@@ -356,7 +377,7 @@
             <li class="list-box">
               <div class="image-cover">
                 <img
-                  src="./images/portfolio-img-3.jpg"
+                  src="./images/portfolio-img-3-pc-@1x.jpg"
                   alt="Meditation App"
                   width="360"
                   height="300"
@@ -376,7 +397,7 @@
             <li class="list-box">
               <div class="image-cover">
                 <img
-                  src="./images/portfolio-img-4.jpg"
+                  src="./images/portfolio-img-4-pc-@1x.jpg"
                   alt="Taxi Service"
                   width="360"
                   height="300"
@@ -396,7 +417,7 @@
             <li class="list-box">
               <div class="image-cover">
                 <img
-                  src="./images/portfolio-img-5.jpg"
+                  src="./images/portfolio-img-5-pc-@1x.jpg"
                   alt="Screen Illustrations"
                   width="360"
                   height="300"
@@ -416,7 +437,7 @@
             <li class="list-box">
               <div class="image-cover">
                 <img
-                  src="./images/portfolio-img-6.jpg"
+                  src="./images/portfolio-img-6-pc-@1x.jpg"
                   alt="Online Courses"
                   width="360"
                   height="300"
@@ -438,7 +459,7 @@
       </section>
     </main>
 
-    <footer class="footer-page">
+    <!-- <footer class="footer-page">
       <div class="container global-footer-container">
         <div class="footer-container">
           <a href="./index.html" class="home-link"
@@ -509,8 +530,8 @@
           </form>
         </div>
       </div>
-    </footer>
-    <div class="modal-overlay">
+    </footer> -->
+    <!-- <div class="modal-overlay">
       <div class="modal">
         <button class="modal-exit-btn" type="button">
           <svg class="exit-btn-icon" width="8" height="8">
@@ -601,6 +622,6 @@
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>
       </div>
-    </div>
+    </div> -->
   </body>
 </html>
