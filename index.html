@@ -45,11 +45,75 @@
             </li>
           </ul>
         </address>
-        <button class="burger-menu-btn" type="button">
+        <button class="burger-menu-btn" type="button" data-menu-open>
           <svg class="burger-menu-icon" width="24" height="24">
             <use href="./images/icons.svg#icon-burger-menu"></use>
           </svg>
         </button>
+      </div>
+
+      <div class="mobile-menu" data-menu>
+        <div class="container mobile-menu-container">
+          <button class="menu-exit-btn" type="button" data-menu-close>
+            <svg class="exit-btn-icon" width="8" height="8">
+              <use href="./images/icons.svg#icon-exit"></use>
+            </svg>
+          </button>
+
+          <nav class="menu-nav">
+            <ul class="menu-nav-list">
+              <li><a class="link" href="">Studio</a></li>
+              <li><a class="link" href="">Portfolio</a></li>
+              <li><a class="link" href="">Contacts</a></li>
+            </ul>
+          </nav>
+
+          <address class="menu-address">
+            <ul class="menu-address-list">
+              <li>
+                <a class="link" href="tel:+110001111111">+11 (000) 111-11-11</a>
+              </li>
+              <li>
+                <a class="link" href="mailto:info@devstudio.com"
+                  >info@devstudio.com
+                </a>
+              </li>
+            </ul>
+          </address>
+
+          <div class="menu-icon-box">
+            <ul class="section-list">
+              <li class="list-icon">
+                <a class="icon-social-link" href="">
+                  <svg class="menu-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-icon">
+                <a class="icon-social-link" href="">
+                  <svg class="menu-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-icon">
+                <a class="icon-social-link" href="">
+                  <svg class="menu-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="list-icon">
+                <a class="icon-social-link" href="">
+                  <svg class="menu-icon" width="16" height="16">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div c>
+        </div>
       </div>
     </header>
 
@@ -57,7 +121,7 @@
       <section class="section-hero">
         <div class="container hero-container">
           <h1 class="page-title">Effective Solutions for Your Business</h1>
-          <button type="button" class="page-order-btn">Order Service</button>
+          <button type="button" class="page-order-btn" data-modal-open>Order Service</button>
         </div>
       </section>
 
@@ -659,9 +723,9 @@
       </div>
     </footer>
 
-    <!-- <div class="modal-overlay">
+    <div class="modal-overlay" data-modal>
       <div class="modal">
-        <button class="modal-exit-btn" type="button">
+        <button class="modal-exit-btn" type="button" data-modal-close>
           <svg class="exit-btn-icon" width="8" height="8">
             <use href="./images/icons.svg#icon-exit"></use>
           </svg>
@@ -743,13 +807,19 @@
                   <use href="./images/icons.svg#icon-check"></use>
                 </svg>
               </span>
-              I accept the terms and conditions of the
-              <a class="modal-accept-link" href="">Privacy Policy</a>
+              <p class="modal-accept-text modal-accept-paragraph">
+                I accept the terms and conditions of the
+              </p>
+              <a class="modal-accept-link modal-accept-paragraph" href=""
+                >Privacy Policy</a
+              >
             </label>
           </div>
           <button class="modal-submit-btn" type="submit">Send</button>
         </form>
       </div>
-    </div> -->
+    </div>
+    <script src="./js/modal.js"></script>
+    <script src="./js/menu.js"></script>
   </body>
 </html>
