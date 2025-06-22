@@ -1294,7 +1294,7 @@ a {
         color: var(--navy-blue);   
     }
 
-    .list-desc {
+    .section-list .benefits-list .list-desc {
         font-weight: 400;
     }
 
